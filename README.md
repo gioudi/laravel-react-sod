@@ -64,7 +64,7 @@ To get a local copy up and running follow these simple example steps.
 👤 **Author1**
 
 - GitHub: [@gioudi](https://github.com/gioudi)
-- GitHub: [@gioudi](https://github.com/SergioVass)
+- GitHub: [@SergioVass](https://github.com/SergioVass)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/analyst-sergio-penagos/)
 
 ## 🤝 Contributing
