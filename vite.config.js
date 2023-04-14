@@ -6,12 +6,12 @@ export default defineConfig({
     host: '0.0.0.0', 
     hmr: { host: 'localhost' }, 
     plugins: [
-        laravel(['resources/ts/app.jsx']),
+        laravel(['resources/js/app.jsx', 'resources/css/app.css']),
         react(),
     ],
     resolve: {
         alias: {
-            '@': '/resources/ts',
+            '@': '/resources/js',
         },
     },
 });
