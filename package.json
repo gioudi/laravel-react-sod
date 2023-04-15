@@ -2,8 +2,13 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "lint": "eslint --fix \"**/*.{ts,tsx}\"",
+        "format": "prettier \"**/*.{ts,tsx}\" --write"
     },
+    "lint-staged": {
+        "*.tsx": "eslint --cache --fix"
+     },
     "devDependencies": {
         "@headlessui/react": "^1.4.2",
         "@inertiajs/react": "^1.0.0",
@@ -15,11 +20,19 @@
         "axios": "^0.19",
         "bootstrap": "^4.0.0",
         "cross-env": "^7.0",
+        "eslint": "^8.38.0",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "eslint-plugin-react-hooks": "^4.6.0",
         "jquery": "^3.2",
         "laravel-vite-plugin": "^0.7.4",
+        "lint-staged": "^13.2.1",
         "lodash": "^4.17.13",
         "popper.js": "^1.12",
         "postcss": "^8.4.21",
+        "prettier": "^2.8.7",
+        "pretty-quick": "^3.1.3",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "resolve-url-loader": "^3.1.0",
