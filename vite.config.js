@@ -6,7 +6,7 @@ export default defineConfig({
     host: '0.0.0.0', 
     hmr: { host: 'localhost' }, 
     plugins: [
-        laravel(['resources/js/app.jsx', 'resources/css/app.css']),
+        laravel(['resources/js/app.tsx', 'resources/css/app.css']),
         react(),
     ],
     resolve: {
