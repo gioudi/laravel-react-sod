@@ -2,13 +2,15 @@
     "private": true,
     "scripts": {
         "dev": "vite",
+        "prepare": "husky install",
         "build": "vite build",
         "lint": "eslint --fix \"**/*.{ts,tsx}\"",
-        "format": "prettier \"**/*.{ts,tsx}\" --write"
+        "format": "prettier \"**/*.{ts,tsx}\" --write",
+        "pre-commit": "npm run format && lint-staged && pretty-quick --staged"
     },
     "lint-staged": {
         "*.tsx": "eslint --cache --fix"
-     },
+    },
     "devDependencies": {
         "@headlessui/react": "^1.4.2",
         "@inertiajs/react": "^1.0.0",
@@ -42,5 +44,8 @@
         "typescript": "^5.0.4",
         "vite": "^4.2.1",
         "vue-template-compiler": "^2.6.13"
+    },
+    "dependencies": {
+        "husky": "^8.0.3"
     }
 }
